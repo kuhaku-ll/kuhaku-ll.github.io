@@ -127,11 +127,38 @@
 
 <p>打开hexo服务，地址：localhost:4000</p>
 <p>ctrl+c关闭服务</p>
+<h1 id="4-Github创建个人仓库"><a href="#4-Github创建个人仓库" class="headerlink" title="4.Github创建个人仓库"></a>4.Github创建个人仓库</h1><p>Github创建仓库名：xxxx.github.io      xxxx为注册的用户名</p>
+<p><a href="https://github.com/xxxx/xxxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxxx/xxxx.github.io.git</a></p>
+<h1 id="5-生成SSH添加到Github"><a href="#5-生成SSH添加到Github" class="headerlink" title="5.生成SSH添加到Github"></a>5.生成SSH添加到Github</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "yourname"</span><br><span class="line">git config --global user.email "youremail"</span><br></pre></td></tr></table></figure>
+
+<p>检查是否输对：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+<p>创建SSH，一路回车：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "youremail"</span><br></pre></td></tr></table></figure>
+
+<p>找到.ssh文件：C:\Users\Administrator\ .ssh</p>
+<p> id_rsa ：私钥</p>
+<p> id_rsa.pub ：公钥（放在github上）</p>
+<p>Github-&gt;setting-&gt;new SSH key,把 id_rsa.pub中的信息复制进去</p>
+<p>gitbash中，查看是否成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>确认时打yes!yes!yes!</p>
+<h1 id="6-将hexo部署到Github"><a href="#6-将hexo部署到Github" class="headerlink" title="6.将hexo部署到Github"></a>6.将hexo部署到Github</h1><p>打开_config.yml,翻到最后，修改为：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/YourgithubName/YourgithubName.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>安装deploy-git,也就是部署的命令(进入到仓库目录执行)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>然后</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/02/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck4xjr8k80001zwqdehfb0r40" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/02/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck4xjytbk0000hsqdh0lqerxc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/02/hello-world/" data-id="ck4xjr8jz0000zwqdg1kn6wab" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/02/hello-world/" data-id="ck4xjytbs0001hsqdh4ik8pdf" class="article-share-link">Share</a>
       
       
     </footer>
