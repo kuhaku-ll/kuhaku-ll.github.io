@@ -1,668 +1,798 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="kuhaku">
-    
-    <meta name="description" content="网站描述">
-    
-    
-    
-    
-    
-    
-    <title>网站标题</title>
-    <link href="http://yoursite.com" rel="prefetch" />
+  <meta charset="utf-8">
+  
 
-    
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/aos.css">
+  
+  <title>网站标题</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="网站描述">
+<meta property="og:type" content="website">
+<meta property="og:title" content="网站标题">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="网站标题">
+<meta property="og:description" content="网站描述">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="kuhaku">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="网站标题" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
 <link rel="stylesheet" href="/css/style.css">
 
-    
-<script src="/js/jquery.min.js"></script>
-
-    
-<script src="/js/bootstrap.min.js"></script>
-
-    
-<script src="/js/aos.js"></script>
-
-    
-<script src="/js/highslide/highslide-full.min.js"></script>
-
-    
-<link rel="stylesheet" href="/js/highslide/highslide.css">
-
-    <style type="text/css">
-        @media (max-width: 768px) {
-            body {
-                background-color: #f0f0f0;
-                background: url('/imgs/xsbg.gif');
-                background-attachment: fixed;
-            }
-        }
-    </style>
-    
-    <!--<script type="text/javascript">
-      if (document.images) {
-        var avatar = new Image();
-        avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
-        var previewsPreLoad = []
-        for(var i = 0; i < length; i++) {
-          previewsPreLoad.push(new Image())
-          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
-        }
-      }
-    </script>-->
 <meta name="generator" content="Hexo 4.2.0"></head>
+
 <body>
-    <!-- 背景轮播图功能 -->
-    <section class="hidden-xs">
-    <ul class="cb-slideshow">
-        <li><span>天若</span></li>
-        <li><span>有情</span></li>
-        <li><span>天亦老</span></li>
-        <li><span>我为</span></li>
-        <li><span>长者</span></li>
-        <li><span>续一秒</span></li>
-    </ul>
-</section>
-    <!-- 欧尼酱功能, 谁用谁知道 -->
-    
-    <header class="navbar navbar-inverse" id="gal-header">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target=".bs-navbar-collapse"
-                    aria-expanded="false">
-                <span class="fa fa-lg fa-reorder"></span>
-            </button>
-            <a href="http://yoursite.com">
-                
-                <style>
-                    #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
-                    }
-                </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">网站标题</div>
-                
-            </a>
-        </div>
-        <div class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav" id="menu-gal">
-                
-                
-                <li class="current">
-                    <a href="/">
-                        <i class="fa fa-home"></i>首页
-                    </a>
-                </li>
-                
-                
-                
-                <li class="">
-                    <a href="/archives">
-                        <i class="fa fa-archive"></i>归档
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li class="">
-                    <a href="/categories">
-                        <i class="fa fa-list"></i>分类
-                    </a>
-                </li>
-                
-                
-                
-                
-                
-                <li class="">
-                    <a href="/tags">
-                        <i class="fa fa-tags"></i>标签
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li class="">
-                    <a href="/about">
-                        <i class="fa fa-user"></i>关于我
-                    </a>
-                </li>
-                
-                
-            </ul>
-        </div>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">网站标题</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">标题</a>
+        </h2>
+      
     </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
 </header>
-    <div id="gal-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 gal-right" id="mainstay">
-                    
-<div class="alert well fade in" id="gal-issue" role="alert">
-    <!-- TODO 添加关闭公告框功能 -->
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <!-- 这里自行配置公告内容 -->
-    这里是公告内容
-    <br>
-    配置相关说明请看<strong>_config.yml</strong>
-    <!-- 自行配置公告内容结束 -->
-</div>
-
-<div id="article-list">
-     
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/25/Hexo/" class="article-date">
+  <time datetime="2020-03-25T08:33:17.509Z" itemprop="datePublished">2020-03-25</time>
+</a>
     
-    <div class="data-article hidden-xs">
-        <span class="month">03月</span>
-        <span class="day">25</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2020/03/25/Hexo/">
-                    <span>Hexo</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2020/03/25/Hexo/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2020/03/25/Hexo/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview1.jpg" alt="Hexo">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2020/03/25/Hexo/">
-                        <span>Hexo</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2020-03-25
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2020/03/25/Hexo/">
-                    
-                    <img src="/imgs/preview/preview1.jpg" alt="Hexo">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/03/25/Hexo/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+  </div>
+  <div class="article-inner">
     
-    <div class="data-article hidden-xs">
-        <span class="month">03月</span>
-        <span class="day">25</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">
-                    <span>Hexo部署</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview1.jpg" alt="Hexo部署">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">
-                        <span>Hexo部署</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2020-03-25
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">
-                    
-                    <img src="/imgs/preview/preview2.jpg" alt="Hexo部署">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
     
-    <div class="data-article hidden-xs">
-        <span class="month">03月</span>
-        <span class="day">25</span>
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/25/Hexo/">Hexo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、什么是Hexo"><a href="#一、什么是Hexo" class="headerlink" title="一、什么是Hexo"></a>一、什么是Hexo</h1><blockquote>
+<p>Hexo是一个快速、简介且高效的博客框架。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<blockquote>
+<p>官网：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a> </p>
+</blockquote>
+<h1 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h1><p>安装推荐使用Git自带的Git Bash控制台</p>
+<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><blockquote>
+<p>Node.js (不低于8.10)</p>
+</blockquote>
+<p>Nodejs版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Git</p>
+</blockquote>
+<p>Git版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装Hexo:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>创建文件夹blog，在blog下执行命令(初始化一个hexo，名字myblog)：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
+
+<p>进入myblog执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>完成后目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><blockquote>
+<p>网站的配置文件，可以在这配置大部分参数</p>
+</blockquote>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><blockquote>
+<p>应用程序的信息。EJS，Stylus和Markdown默认安装，可自由移除。</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">package.json</span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="attr">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="attr">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"hexo"</span>: &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">""</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"hexo"</span>: <span class="string">"^4.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^1.0.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><blockquote>
+<p>模板文件夹。当新建文章时，Hexo会根据scaffold来建立文件。</p>
+</blockquote>
+<blockquote>
+<p>Hexo的模板是指在新建的文章文件中默认填充的内容。</p>
+</blockquote>
+<h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><blockquote>
+<p>存放文章的地方。</p>
+</blockquote>
+<blockquote>
+<p>除_post文件夹之外，开头为 _ 的文件/文件夹和隐藏的文件会被忽略。</p>
+</blockquote>
+<blockquote>
+<p>Markdown和HTML文件会被解析并放到public文件夹，其他文件会被拷贝过去</p>
+</blockquote>
+<h3 id="thems"><a href="#thems" class="headerlink" title="thems"></a>thems</h3><blockquote>
+<p>主题文件夹。Hexo会根据主题来生成静态页面。</p>
+</blockquote>
+<h3 id="node-modulues"><a href="#node-modulues" class="headerlink" title="node_modulues"></a>node_modulues</h3><blockquote>
+<p>依赖包</p>
+</blockquote>
+<h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><blockquote>
+<p>运行时生成，存放生成的页面</p>
+</blockquote>
+<p>#三、本地运行</p>
+<p>编译文章（将文章转换成html）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>开启服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo server  -p 5000</span><br></pre></td></tr></table></figure>
+
+<p>此命令会在本期启动服务，访问地址：localhost:4000</p>
+<p>-p可修改端口号</p>
+<p>ctrl+c可关闭服务</p>
+<h1 id="四、部署到GitHub"><a href="#四、部署到GitHub" class="headerlink" title="四、部署到GitHub"></a>四、部署到GitHub</h1><p>##新建仓库</p>
+<blockquote>
+<p>新建仓库名：<username>.github.io</p>
+</blockquote>
+<blockquote>
+<p><username>为Github用户名</p>
+</blockquote>
+<blockquote>
+<p>仓库地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><username>/<username>.github.io.git</p>
+</blockquote>
+<h2 id="生成SSH到Github"><a href="#生成SSH到Github" class="headerlink" title="生成SSH到Github"></a>生成SSH到Github</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "username"</span><br><span class="line">git config --global user.email "email"</span><br></pre></td></tr></table></figure>
+
+<p>检验是否输对：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+<p>创建SSH，一路回车：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "email"</span><br></pre></td></tr></table></figure>
+
+<p>找到.ssh文件：C:\Users\Administrator\.ssh</p>
+<p>id_rsa:私钥</p>
+<p>id_rsa.pub:公钥（放在github上）</p>
+<p>Github-&gt;setting-&gt;SSH and GPGkeys-&gt;new SSH key ,把id_rsa.pub中的信息复制进去</p>
+<p>gitbush中，查看是否成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>确认时打yes!yes!yes!</p>
+<h2 id="部署hexo到Github"><a href="#部署hexo到Github" class="headerlink" title="部署hexo到Github"></a>部署hexo到Github</h2><p>打开_config.yml，翻到最后，修改为:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deloy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"> <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>安装deploy-git(进入仓库目录执行)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>部署</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>hexo clean:删除public文件</p>
+</blockquote>
+<blockquote>
+<p>hexo generate:等于hexo g，生成静态文件</p>
+</blockquote>
+<blockquote>
+<p>执行hexo deploy时，hexo会将public目录中的文件和目录推送至_config.yml中指定的远程仓库中，并且完全覆盖该分支下的已有内容</p>
+</blockquote>
+<blockquote>
+<p>我的blog地址：kuhaku-ll.github.io</p>
+</blockquote>
+
+      
     </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">
-                    <span>log4j日志</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview3.jpg" alt="log4j日志">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">
-                        <span>log4j日志</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2020-03-25
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">
-                    
-                    <img src="/imgs/preview/preview1.jpg" alt="log4j日志">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-</div>
-<!-- 前方最多7个 < 1 2 3 4 5 6 -->
-<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
-
-<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
-<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/25/Hexo/" data-id="ck872pe5p0000m0qd6uwl4c0l" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+    <article id="post-Hexo部署" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/" class="article-date">
+  <time datetime="2020-03-25T06:29:16.298Z" itemprop="datePublished">2020-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">Hexo部署</a>
+    </h1>
+  
 
-<div id="gal-pagination" class="clearfix">
-    <ul class="pagination pagination-gal pull-right">
-        
-        
-        
-        
-        <li class="current">
-            <span>1</span>
-        </li>
-        
-        
-        
-        
-    </ul>
-</div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、什么是Hexo"><a href="#一、什么是Hexo" class="headerlink" title="一、什么是Hexo"></a>一、什么是Hexo</h1><blockquote>
+<p>Hexo是一个快速、简介且高效的博客框架。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<blockquote>
+<p>官网：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a> </p>
+</blockquote>
+<h1 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h1><p>安装推荐使用Git自带的Git Bash控制台</p>
+<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><blockquote>
+<p>Node.js (不低于8.10)</p>
+</blockquote>
+<p>Nodejs版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+<blockquote>
+<p>Git</p>
+</blockquote>
+<p>Git版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
 
-                </div>
-                <aside class="col-md-4 gal-left" id="sidebar">
-    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
-<aside id="sidebar-search">
-    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <form class="form-inline clearfix" id="search-form" method="get"
-              action="/search/index.html">
-            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
-            <button class="btn btn-danger btn-gal" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装Hexo:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>版本查看：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>创建文件夹blog，在blog下执行命令(初始化一个hexo，名字myblog)：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
+
+<p>进入myblog执行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>完成后目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><blockquote>
+<p>网站的配置文件，可以在这配置大部分参数</p>
+</blockquote>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><blockquote>
+<p>应用程序的信息。EJS，Stylus和Markdown默认安装，可自由移除。</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">package.json</span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="attr">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="attr">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"hexo"</span>: &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">""</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"hexo"</span>: <span class="string">"^4.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^1.0.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><blockquote>
+<p>模板文件夹。当新建文章时，Hexo会根据scaffold来建立文件。</p>
+</blockquote>
+<blockquote>
+<p>Hexo的模板是指在新建的文章文件中默认填充的内容。</p>
+</blockquote>
+<h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><blockquote>
+<p>存放文章的地方。</p>
+</blockquote>
+<blockquote>
+<p>除_post文件夹之外，开头为 _ 的文件/文件夹和隐藏的文件会被忽略。</p>
+</blockquote>
+<blockquote>
+<p>Markdown和HTML文件会被解析并放到public文件夹，其他文件会被拷贝过去</p>
+</blockquote>
+<h3 id="thems"><a href="#thems" class="headerlink" title="thems"></a>thems</h3><blockquote>
+<p>主题文件夹。Hexo会根据主题来生成静态页面。</p>
+</blockquote>
+<h3 id="node-modulues"><a href="#node-modulues" class="headerlink" title="node_modulues"></a>node_modulues</h3><blockquote>
+<p>依赖包</p>
+</blockquote>
+<h3 id="public"><a href="#public" class="headerlink" title="public"></a>public</h3><blockquote>
+<p>运行时生成，存放生成的页面</p>
+</blockquote>
+<p>#三、本地运行</p>
+<p>编译文章（将文章转换成html）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>开启服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo server  -p 5000</span><br></pre></td></tr></table></figure>
+
+<p>此命令会在本期启动服务，访问地址：localhost:4000</p>
+<p>-p可修改端口号</p>
+<p>ctrl+c可关闭服务</p>
+<h1 id="四、部署到GitHub"><a href="#四、部署到GitHub" class="headerlink" title="四、部署到GitHub"></a>四、部署到GitHub</h1><p>##新建仓库</p>
+<blockquote>
+<p>新建仓库名：<username>.github.io</p>
+</blockquote>
+<blockquote>
+<p><username>为Github用户名</p>
+</blockquote>
+<blockquote>
+<p>仓库地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><username>/<username>.github.io.git</p>
+</blockquote>
+<h2 id="生成SSH到Github"><a href="#生成SSH到Github" class="headerlink" title="生成SSH到Github"></a>生成SSH到Github</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "username"</span><br><span class="line">git config --global user.email "email"</span><br></pre></td></tr></table></figure>
+
+<p>检验是否输对：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+<p>创建SSH，一路回车：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "email"</span><br></pre></td></tr></table></figure>
+
+<p>找到.ssh文件：C:\Users\Administrator\.ssh</p>
+<p>id_rsa:私钥</p>
+<p>id_rsa.pub:公钥（放在github上）</p>
+<p>Github-&gt;setting-&gt;SSH and GPGkeys-&gt;new SSH key ,把id_rsa.pub中的信息复制进去</p>
+<p>gitbush中，查看是否成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>确认时打yes!yes!yes!</p>
+<h2 id="部署hexo到Github"><a href="#部署hexo到Github" class="headerlink" title="部署hexo到Github"></a>部署hexo到Github</h2><p>打开_config.yml，翻到最后，修改为:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deloy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"> <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span></span><br><span class="line"> <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>安装deploy-git(进入仓库目录执行)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>部署</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>执行hexo deploy时，hexo会将public目录中的文件和目录推送至_config.yml中指定的远程仓库中，并且完全覆盖该分支下的已有内容</p>
+</blockquote>
+<blockquote>
+<p>我的blog地址：kuhaku-ll.github.io</p>
+</blockquote>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/" data-id="ck872pe690001m0qd3k6l8xzl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-log4j日志" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/" class="article-date">
+  <time datetime="2020-03-25T06:27:53.788Z" itemprop="datePublished">2020-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">log4j日志</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>依赖：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.slf4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>slf4j-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.6.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.slf4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>slf4j-log4j12<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.6.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>log4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.16<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="一、Log4j简介"><a href="#一、Log4j简介" class="headerlink" title="一、Log4j简介"></a>一、Log4j简介</h1><blockquote>
+<p>Log4j有三个主要的组件：Loggers(记录器),Appenders(输出源),Layout(布局)。</p>
+<p>可简单理解为日志级别，日志要输出的地方和日志以何种方式输出</p>
+</blockquote>
+<p>##1.Loggers</p>
+<blockquote>
+<p>Loggers组件在系统中被分为五个级别：DEBUG、INFO、WARN、ERROR和FATAL</p>
+<p>重要程度：DEBUG&lt;INFO&lt;WAN&lt;ERROR&lt;FATAL</p>
+</blockquote>
+<blockquote>
+<p>Log4j规则：只输出级别不低于设定级别的日志信息。</p>
+<p>例如Loggers设定级别为INFO，则不会输出DEBUG</p>
+</blockquote>
+<h2 id="2-Appenders"><a href="#2-Appenders" class="headerlink" title="2.Appenders"></a>2.Appenders</h2><blockquote>
+<p>基本功能：禁止和使用日志</p>
+</blockquote>
+<blockquote>
+<p>进阶功能：输出到不同的地方，如控制台、文件</p>
+<p>​                    根据文件大小或者时间产生新的文件</p>
+</blockquote>
+<p>常用的类：</p>
+<blockquote>
+<p> org.apache.log4j.ConsoleAppender (控制台)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.FileAppender (文件)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.DailyRollingFileAppender (每天产生一个日志文件)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.RollingFileAppender (文件大小到指定成都产生一个新文件)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.WriterAppender (将日志信息以流格式发送到任意指定位置)</p>
+</blockquote>
+<p>配置模式：</p>
+<blockquote>
+<p> log4j.appender.appenderName = className </p>
+</blockquote>
+<blockquote>
+<p> log4j.appender.appenderName.Option1 = value1 ….</p>
+</blockquote>
+<blockquote>
+<p> log4j.appender.appenderName.OptionN = valueN </p>
+</blockquote>
+<h2 id="3-Layouts"><a href="#3-Layouts" class="headerlink" title="3.Layouts"></a>3.Layouts</h2><blockquote>
+<p>以自定义格式将日志输出</p>
+</blockquote>
+<blockquote>
+<p>4种日志输出样式：HTML样式、自由指定样式、包含日志级别与信息的样式、包含日志时间、线程、类别等信息的样式。</p>
+</blockquote>
+<p>常用的类：</p>
+<blockquote>
+<p> org.apache.log4j.HTMLLayout (HTML样式)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.PatternLayout (灵活指定布局模式)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.SimpleLayout (包含日志信息的级别和信息字符串)</p>
+</blockquote>
+<blockquote>
+<p> org.apache.log4j.TTCCLayout (包含日志产生的时间、线程、类别等信息)</p>
+</blockquote>
+<p>配置模式：</p>
+<blockquote>
+<p> log4j.appender.appenderName.layout =className </p>
+</blockquote>
+<blockquote>
+<p> log4j.appender.appenderName.layout.Option1 = value1 …</p>
+</blockquote>
+<blockquote>
+<p> log4j.appender.appenderName.layout.OptionN = valueN </p>
+</blockquote>
+<h1 id="二、配置详解"><a href="#二、配置详解" class="headerlink" title="二、配置详解"></a>二、配置详解</h1><h2 id="1-配置Logger"><a href="#1-配置Logger" class="headerlink" title="1.配置Logger"></a>1.配置Logger</h2><blockquote>
+<p>Log4j.rootLogger = [ level ] ,  appenderName1 , appenderName2 …</p>
+</blockquote>
+<blockquote>
+<p> log4j.additivity.org.apache=false  ：表示Logger不会在父Logger的appender里输出，默认为true</p>
+</blockquote>
+<blockquote>
+<p>level:设置日志的最低级别</p>
+<p>​        可设置的值有OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL，建议只使用中间四个级别</p>
+</blockquote>
+<blockquote>
+<p> appenderName ：指定日志信息要输出到哪里。</p>
+<p>​                    可以同时指定多个输出目的地，用逗号隔开。</p>
+</blockquote>
+<blockquote>
+<p>例：log4j.rootLogger = INFO ,<strong>test</strong>,B2,C3</p>
+</blockquote>
+<h2 id="2-配置日志信息输出目的地（appender"><a href="#2-配置日志信息输出目的地（appender" class="headerlink" title="2.配置日志信息输出目的地（appender)"></a>2.配置日志信息输出目的地（appender)</h2><blockquote>
+<p> log4j.appender.appenderName = className </p>
+</blockquote>
+<blockquote>
+<p>appenderName :自定义appenderName ，在log4j.rootLogger设置中使用</p>
+</blockquote>
+<blockquote>
+<p>className:Appender类名</p>
+</blockquote>
+<p>1.ConsonelAppender：</p>
+<blockquote>
+<p>log4j.appender.<strong>test</strong> = org.apache.log4j.ConsonelAppender</p>
+</blockquote>
+<p>选项：</p>
+<blockquote>
+<p>Threshold = WARN: 指定日志信息的最低输出级别，默认为DEBUG</p>
+</blockquote>
+<blockquote>
+<p>ImmediateFlush = true:表示所有消息都会被立即输出，设为false则不输出，默认值为true。</p>
+</blockquote>
+<blockquote>
+<p>Target = System.err:默认是System.out</p>
+</blockquote>
+<p>2.FileAppender:</p>
+<blockquote>
+<p>log4j.appender.test = org.apache.log4j.FileAppender</p>
+</blockquote>
+<p>选项:</p>
+<blockquote>
+<p>Threshold = WARN:指定日志信息的最低输出级别，默认为DEBUG</p>
+</blockquote>
+<blockquote>
+<p>ImmendiateFlush = true:表示所有消息都会被立即输出，设为false则不输出，默认值为true</p>
+</blockquote>
+<blockquote>
+<p>Append =false :true表示消息增加到指定文件中，false则将消息覆盖指定的文件内容，默认值是true</p>
+</blockquote>
+<blockquote>
+<p>File =D:/logs/logging.log4j :指定消息输出到logging.log4j中</p>
+</blockquote>
+<p>3.DailyRollingFileAppender</p>
+<blockquote>
+<p>log4j.appender.test = org.apache.log4j.DailyRollingFileAppender</p>
+</blockquote>
+<p>选项：</p>
+<blockquote>
+<p>Threshold = WARN:指定日志信息的最低输出级别，默认为DEBUG</p>
+</blockquote>
+<blockquote>
+<p>ImmediateFlush = true:表示所有消息都会被立即输出，设为false则不输出，默认值为true。</p>
+</blockquote>
+<blockquote>
+<p>Append =false :true表示消息增加到指定文件中，false则将消息覆盖指定的文件内容，默认值是true</p>
+</blockquote>
+<blockquote>
+<p>File =D:/logs/logging.log4j :指定消息输出到logging.log4j中</p>
+</blockquote>
+<blockquote>
+<p>DatePatten = ‘.’yyyy-MM:每月重新一个新的日志文件。</p>
+<p>​    当前月的日志文件为：logging.log4j，上个月的日志文件名为：logging.log4j.yyyy-MM</p>
+</blockquote>
+<p>可按周、天、时、分、秒来滚动日志文件，对应格式如下：</p>
+<blockquote>
+<p>‘.’yyyy-MM :每月</p>
+</blockquote>
+<blockquote>
+<p>‘.’yyyy-ww：每周</p>
+</blockquote>
+<blockquote>
+<p>‘.’yyyy-MM-dd：每天</p>
+</blockquote>
+<blockquote>
+<p>‘.’yyyy-MM-dd-a：每天2次</p>
+</blockquote>
+<blockquote>
+<p>‘.’yyyy-MM-dd-HH：每个小时</p>
+</blockquote>
+<blockquote>
+<p>‘.’yyyy-MM-dd-HH-mm”：每分钟</p>
+</blockquote>
+<p>4.RollingFileAppender </p>
+<blockquote>
+<p>og4j.appender.<strong>test</strong> = org.apache.log4j.ConsonelAppender</p>
+</blockquote>
+<p>选项：</p>
+<blockquote>
+<p>Threshold = WARN:指定日志信息的最低输出级别，默认为DEBUG</p>
+</blockquote>
+<blockquote>
+<p>ImmediateFlush = true:表示所有消息都会被立即输出，设为false则不输出，默认值为true。</p>
+</blockquote>
+<blockquote>
+<p>Append =false :true表示消息增加到指定文件中，false则将消息覆盖指定的文件内容，默认值是true</p>
+</blockquote>
+<blockquote>
+<p>File =D:/logs/logging.log4j :指定消息输出到logging.log4j中</p>
+</blockquote>
+<blockquote>
+<p>MaxFileSize = 100KB：后缀可以是KB，MB或者GB。在日志文件到达该大小时，将会自动滚动，即将原来的内容移到logging.log4j.1文件中</p>
+</blockquote>
+<blockquote>
+<p>MaxBackupIndex = 2： 指定可以产生的滚动文件的最大数，例如，设为2则可以产生logging.log4j.1、logging.log4j.2两个滚动文件和一个logging.log4j文件。</p>
+</blockquote>
+<h1 id="3-配置日志信息的输出格式-Layout"><a href="#3-配置日志信息的输出格式-Layout" class="headerlink" title="3.配置日志信息的输出格式(Layout)"></a>3.配置日志信息的输出格式(Layout)</h1><blockquote>
+<p>log4j.appender.test.layout = className</p>
+</blockquote>
+<p>1.HTMLLayout:</p>
+<blockquote>
+<p>log4j.appender.test.layout =  org.apache.log4j.HTMLLayout </p>
+</blockquote>
+<p>选项：</p>
+<blockquote>
+<p>LocationInfo =true：输出java文件名称和行号，默认是false</p>
+</blockquote>
+<blockquote>
+<p>Title = My Logging :默认值是Log4J Log Messages</p>
+</blockquote>
+<p>2.PatternLayout</p>
+<blockquote>
+<p>log4j.appender.test.layout =  org.apache.log4j. PatternLayout </p>
+</blockquote>
+<p>选项：</p>
+<blockquote>
+<p>ConversionPatten = %m%n ：设定以怎样的格式显示消息</p>
+</blockquote>
+<p>格式化符号说明：</p>
+<blockquote>
+<p>%p：输出日志信息的优先级，即DEBUG、INFO、WARN、ERRIR、FATAL</p>
+</blockquote>
+<blockquote>
+<p>%d：输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式</p>
+<p>​        如：%d{yyyy/MM/ddHH:mm:ss,SSS}</p>
+</blockquote>
+<blockquote>
+<p>%r：输出自应用程序启动到输出该log信息耗费的毫秒数</p>
+</blockquote>
+<blockquote>
+<p>%t：输出产生该日志时间的线程名</p>
+</blockquote>
+<blockquote>
+<p>%l：输出日志时间的发生位置，相当于%c.%M(%F:%L)的组合，包括类全名、方法、文件名以及在代码中的行数。例如：test.TestLog4j.main(estLog4j.java:10)</p>
+</blockquote>
+<blockquote>
+<p>%c：输出日志信息所属的类</p>
+</blockquote>
+<blockquote>
+<p>%M：输出产生日志信息的方法名</p>
+</blockquote>
+<blockquote>
+<p>%F：输出日志消息产生时所在的文件名称</p>
+</blockquote>
+<blockquote>
+<p>%L：输出代码中的行号</p>
+</blockquote>
+<blockquote>
+<p>%m：输出代码中指定的具体日志信息</p>
+</blockquote>
+<blockquote>
+<p>%n：输出一个回车换行符，Windows平台为”rn”,Unix平台为”n”</p>
+</blockquote>
+<blockquote>
+<p>%x：输出和当前线程相关连的NDC（嵌套诊断环境），尤其用到java servlet这样的客户端多线程的应用中</p>
+</blockquote>
+<blockquote>
+<p>%%：输出一个%符号</p>
+</blockquote>
+<p>另外，还可以在%与格式字符之间加上修饰符来控制其最小长度、最大长度、和文本的对其方式。如：</p>
+<blockquote>
+<p>c：指定输出category的名称，最小的长度是20，如果category的长度小于20，默认情况下右对齐</p>
+</blockquote>
+<blockquote>
+<p>%-20c：”-“表示左对齐</p>
+</blockquote>
+<blockquote>
+<p>%.30c：指定输出category的名称，最大的长度是30.如果category的名称长度大于30，就会将左边多出的字符截掉，但小于30也不会补空格</p>
+</blockquote>
+<h1 id="4-例子"><a href="#4-例子" class="headerlink" title="4.例子"></a>4.例子</h1><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##设置</span></span><br><span class="line"><span class="meta">log4j.rootLogger</span> = <span class="string">debug,stdout,D,E</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##输出信息到控制台</span></span><br><span class="line"><span class="meta">log4j.appender.stdout</span> = <span class="string">org.apache.log4j.ConsoleAppender</span></span><br><span class="line"><span class="meta">log4j.appender.stdout.Target</span> = <span class="string">System.out</span></span><br><span class="line"><span class="meta">log4j.appender.stdout.layout</span> = <span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="meta">log4j.appender.stdout.layout.ConversionPattern</span> = <span class="string">[%-5p] %d&#123;yyyy-MM-dd HH:mm:ss,SSS&#125; method:%l%n%m%n</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##输出DEBUG级别以上的日志到 E://logs/log.log</span></span><br><span class="line"><span class="meta">log4j.appender.D</span> = <span class="string">org.apache.log4j.DailyRollingFileAppender</span></span><br><span class="line"><span class="meta">log4j.appender.D.File</span> = <span class="string">E://log/log.log</span></span><br><span class="line"><span class="meta">log4j.appender.D.Append</span> = <span class="string">true</span></span><br><span class="line"><span class="meta">log4j.appender.D.Threshold</span> =<span class="string">DEBUG</span></span><br><span class="line"><span class="meta">log4j.appender.D.layout</span> = <span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="meta">log4j.appender.D.layout.ConversionPattern</span> = <span class="string">%-d&#123;yyyy-MM-dd HH:mm:ss&#125;[%t:%r]-[%p] %m%n</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##输出ERROR级别以上的日志到 E：//logs/error.log</span></span><br><span class="line"><span class="meta">log4j.appender.E</span> = <span class="string">org.apache.log4j.DailyRollingFileAppender</span></span><br><span class="line"><span class="meta">log4j.appender.E.File</span> =<span class="string">E://logs/error.log</span></span><br><span class="line"><span class="meta">log4j.appender.E.Append</span> =<span class="string">true</span></span><br><span class="line"><span class="comment">#设置级别为ERROR</span></span><br><span class="line"><span class="meta">log4j.appender.E.Threshold</span> = <span class="string">ERROR</span></span><br><span class="line"><span class="meta">log4j.appender.E.layout</span> = <span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="meta">log4j.appender.E.layout.ConversionPattern</span> = <span class="string">%-d&#123;yyyy-MM-dd HH:mm:ss&#125; [ %t:%r ] - [ %p ] %m%n</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/25/log4j%E6%97%A5%E5%BF%97/" data-id="ck872pe6c0002m0qd7vamcynt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/25/Hexo/">Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">Hexo部署</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">log4j日志</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
 </aside>
-    <aside id="sidebar-author">
-    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
-        <div class="panel-heading" style="text-align: center">
-            <i class="fa fa-quote-left"></i>
-            kuhaku
-            <i class="fa fa-quote-right"></i>
-        </div>
-        <div class="author-panel text-center">
-            <img src="/imgs/avatar.jpg" width="140" height="140"
-                 alt="个人头像" class="author-image">
-            <p class="author-description"><p>网站描述</p>
-</p>
-        </div>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 kuhaku<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-</aside>
-    
-    <aside id="sidebar-recent_comments">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-comments"></i>
-            最新评论
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush"></ul>
-    </div>
-</aside>
-    
-    <!-- 要配置好leancloud才能开启此小工具 -->
-    
-    
-    <aside id="sidebar-recent_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            近期文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/Hexo/">Hexo</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">Hexo部署</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">log4j日志</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="sidebar-rand_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            随机文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/Hexo/">Hexo</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/Hexo%E9%83%A8%E7%BD%B2/">Hexo部署</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/log4j%E6%97%A5%E5%BF%97/">log4j日志</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="gal-sets">
-        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-            <ul class="nav nav-pills pills-gal">
-
-                
-                <li>
-                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
-                </li>
-                
-            </ul>
-            <div class="tab-content">
-                
-                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
-    
-</div>
-                
-                
-                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
-    
-    <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
-    </li>
-    
-    <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
-    </li>
-    
-    <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
-    </li>
-    
-</div>
-                
-                
-                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
-    
-    <li>
-        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
-    </li>
-    
-    <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-    </li>
-    
-    <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
-    </li>
-    
-</div>
-                
-            </div>
-        </div>
-    </aside>
-    
-</aside>
-            </div>
-        </div>
-    </div>
-    <footer id="gal-footer">
-    <div class="container">
-        Copyright © 2018 kuhaku Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
-    </div>
+  </div>
 </footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
-<!-- 回到顶端 -->
-<div id="gal-gotop">
-    <i class="fa fa-angle-up"></i>
-</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
 </body>
-
-<script src="/js/activate-power-mode.js"></script>
-
-<script>
-
-    // 配置highslide
-	hs.graphicsDir = '/js/highslide/graphics/'
-    hs.outlineType = "rounded-white";
-    hs.dimmingOpacity = 0.8;
-    hs.outlineWhileAnimating = true;
-    hs.showCredits = false;
-    hs.captionEval = "this.thumb.alt";
-    hs.numberPosition = "caption";
-    hs.align = "center";
-    hs.transitions = ["expand", "crossfade"];
-    hs.lang.number = '共%2张图, 当前是第%1张';
-    hs.addSlideshow({
-      interval: 5000,
-      repeat: true,
-      useControls: true,
-      fixedControls: "fit",
-      overlayOptions: {
-        opacity: 0.75,
-        position: "bottom center",
-        hideOnMouseOut: true
-      }
-    })
-
-    // 初始化aos
-    AOS.init({
-      duration: 1000,
-      delay: 0,
-      easing: 'ease-out-back'
-    });
-
-</script>
-<script>
-	POWERMODE.colorful = 'true';    // make power mode colorful
-	POWERMODE.shake = 'true';       // turn off shake
-	// TODO 这里根据具体情况修改
-	document.body.addEventListener('input', POWERMODE);
-</script>
-<script>
-    window.slideConfig = {
-      prefix: '/imgs/slide/background',
-      ext: 'jpg',
-      maxCount: '6'
-    }
-</script>
-
-<script src="/js/hs.js"></script>
-<script src="/js/blog.js"></script>
-
-
-
-
 </html>
